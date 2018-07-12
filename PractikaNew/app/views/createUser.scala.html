@@ -1,0 +1,40 @@
+@(form: Form[Entities.User])
+<html>
+    <head>
+        <title>
+            Добавление нового пользователя
+        </title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/style.css")">
+    </head>
+    <body>
+        <a href="@routes.LoginController.renderLoginForm()" class = "link">На главную страницу </a>
+        <h1 class="g1">Регистрация</h1>
+
+        @if(form.hasGlobalErrors){
+            <h2>@form.globalError.message</h2>
+        }
+
+        @helper.form(action = routes.UsersController.addingUser(), 'id -> "slick-login"){
+
+            <table >
+                <tr>
+                    <td> Логин:  </td> <td> @helper.inputText(form("login"),'_showConstraints ->false)</td>
+                </tr>
+                <tr>
+                    <td> Пароль:  </td> <td>@helper.inputText(form("password"),'_showConstraints ->false)</td>
+                </tr>
+                <tr>
+                    <td> Регион:  </td> <td>@helper.inputText(form("region"),'_showConstraints ->false)</td>
+                </tr>
+
+
+            </table>
+
+
+            <input type ="submit" value="Создать">
+            }
+
+
+
+    </body>
+</html>

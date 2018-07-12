@@ -1,0 +1,292 @@
+2018-07-12 09:18:19,895 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'workdb'
+2018-07-12 09:18:20,774 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-4 - Database [workdb] connected at jdbc:postgresql://172.16.50.4:5432/dictionary
+2018-07-12 09:18:25,197 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-4 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-07-12 09:18:35,012 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+    filters.ExampleFilter
+
+2018-07-12 09:18:35,027 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev)
+2018-07-12 09:18:36,917 [INFO] from controllers.LoginController in application-akka.actor.default-dispatcher-5 - Кто-то пришел на страницу логина
+2018-07-12 09:18:36,918 [INFO] from controllers.LoginController in application-akka.actor.default-dispatcher-4 - Кто-то пришел на страницу логина
+2018-07-12 09:18:55,576 [INFO] from controllers.LoginController in application-akka.actor.default-dispatcher-9 - Проверка формы логина
+2018-07-12 09:18:56,488 [INFO] from controllers.LoginController in application-akka.actor.default-dispatcher-9 - Пользователь don успешно авторизовался
+2018-07-12 09:18:56,489 [INFO] from controllers.LoginController in application-akka.actor.default-dispatcher-9 - Пользователь don авторизовался в роли администратора
+2018-07-12 09:18:56,786 [INFO] from controllers.MainPageController in application-akka.actor.default-dispatcher-9 - Пользователь don переходит на главную страницу
+2018-07-12 09:18:59,091 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-12 - Пользователь: don получает значения reestr
+2018-07-12 09:18:59,091 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-12 - Формирование и отправка структуры справочника reestr в формате .xml
+2018-07-12 09:18:59,352 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-12 - Формирование и отправка содержимого справочника reestr в формате .xml
+2018-07-12 09:22:14,476 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2018-07-12 09:22:15,222 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'workdb'
+2018-07-12 09:22:15,252 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-4 - Database [workdb] connected at jdbc:postgresql://172.16.50.4:5432/dictionary
+2018-07-12 09:22:15,512 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-4 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-07-12 09:22:15,833 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+    filters.ExampleFilter
+
+2018-07-12 09:22:15,834 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev)
+2018-07-12 09:22:15,884 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-8 - Пользователь: don получает значения reestr
+2018-07-12 09:22:15,884 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-8 - Формирование и отправка структуры справочника reestr в формате .xml
+2018-07-12 09:22:15,934 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-8 - Формирование и отправка содержимого справочника reestr в формате .xml
+2018-07-12 09:25:03,690 [INFO] from application in application-akka.actor.default-dispatcher-12 - Shutting down connection pool.
+2018-07-12 09:25:04,100 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-35 - Creating Pool for datasource 'workdb'
+2018-07-12 09:25:04,130 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-35 - Database [workdb] connected at jdbc:postgresql://172.16.50.4:5432/dictionary
+2018-07-12 09:25:04,373 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-35 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-07-12 09:25:04,591 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-35 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+    filters.ExampleFilter
+
+2018-07-12 09:25:04,593 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-35 - Application started (Dev)
+2018-07-12 09:25:04,626 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-5 - Пользователь: don получает значения reestr
+2018-07-12 09:25:04,626 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-5 - Формирование и отправка структуры справочника reestr в формате .xml
+2018-07-12 09:25:04,649 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-5 - Формирование и отправка содержимого справочника reestr в формате .xml
+2018-07-12 09:26:09,380 [INFO] from application in application-akka.actor.default-dispatcher-13 - Shutting down connection pool.
+2018-07-12 09:26:09,962 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-39 - Creating Pool for datasource 'workdb'
+2018-07-12 09:26:09,992 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-39 - Database [workdb] connected at jdbc:postgresql://172.16.50.4:5432/dictionary
+2018-07-12 09:26:10,119 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-39 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-07-12 09:26:10,355 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-39 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+    filters.ExampleFilter
+
+2018-07-12 09:26:10,356 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-39 - Application started (Dev)
+2018-07-12 09:26:10,395 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-6 - Пользователь: don получает значения reestr
+2018-07-12 09:26:10,395 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-6 - Формирование и отправка структуры справочника reestr в формате .xml
+2018-07-12 09:26:10,418 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-6 - Формирование и отправка содержимого справочника reestr в формате .xml
+2018-07-12 09:30:19,882 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-39 - Shutting down connection pool.
+2018-07-12 09:30:20,366 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-39 - Creating Pool for datasource 'workdb'
+2018-07-12 09:30:20,398 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-39 - Database [workdb] connected at jdbc:postgresql://172.16.50.4:5432/dictionary
+2018-07-12 09:30:20,590 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-39 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-07-12 09:30:20,753 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-39 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+    filters.ExampleFilter
+
+2018-07-12 09:30:20,754 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-39 - Application started (Dev)
+2018-07-12 09:30:20,783 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-6 - Пользователь: don получает значения reestr
+2018-07-12 09:30:20,783 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-6 - Формирование и отправка структуры справочника reestr в формате .xml
+2018-07-12 09:30:20,815 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-6 - Формирование и отправка содержимого справочника reestr в формате .xml
+2018-07-12 09:30:36,341 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-9 - Пользователь: don получает значения doctors
+2018-07-12 09:30:36,341 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-9 - Формирование и отправка структуры справочника doctors в формате .xml
+2018-07-12 09:30:36,362 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-9 - Формирование и отправка содержимого справочника doctors в формате .xml
+2018-07-12 09:30:43,705 [ERROR] from application in application-akka.actor.default-dispatcher-9 - 
+
+! @78h6eeelj - Internal server error, for (GET) [/xml/doctors?pos=0&login=%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80&admin=true] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:251)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:178)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:363)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:361)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.NullPointerException: null
+	at controllers.XmlController.xmlFunction(XmlController.java:94)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$26(Routes.scala:485)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:134)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:133)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:108)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:88)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:69)
+	at play.core.j.JavaAction.$anonfun$apply$8(JavaAction.scala:138)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallback(Promise.scala:312)
+	at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:303)
+	at scala.concurrent.impl.Promise.transformWith(Promise.scala:36)
+	at scala.concurrent.impl.Promise.transformWith$(Promise.scala:34)
+	at scala.concurrent.impl.Promise$DefaultPromise.transformWith(Promise.scala:183)
+	at scala.concurrent.Future.flatMap(Future.scala:301)
+	at scala.concurrent.Future.flatMap$(Future.scala:301)
+	at scala.concurrent.impl.Promise$DefaultPromise.flatMap(Promise.scala:183)
+	at play.api.libs.streams.Accumulator$.$anonfun$futureToSink$1(Accumulator.scala:244)
+	at akka.stream.impl.Transform.apply(TraversalBuilder.scala:155)
+	at akka.stream.impl.PhasedFusingActorMaterializer.materialize(PhasedFusingActorMaterializer.scala:476)
+	at akka.stream.impl.PhasedFusingActorMaterializer.materialize(PhasedFusingActorMaterializer.scala:417)
+	at akka.stream.impl.PhasedFusingActorMaterializer.materialize(PhasedFusingActorMaterializer.scala:408)
+	at akka.stream.scaladsl.RunnableGraph.run(Flow.scala:556)
+	at play.api.libs.streams.SinkAccumulator.run(Accumulator.scala:135)
+	at play.api.libs.streams.SinkAccumulator.run(Accumulator.scala:139)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:357)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	... 12 common frames omitted
+2018-07-12 09:30:58,857 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-8 - Пользователь: don получает значения interv_kh
+2018-07-12 09:30:58,857 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-8 - Формирование и отправка структуры справочника interv_kh в формате .xml
+2018-07-12 09:30:58,883 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-8 - Формирование и отправка содержимого справочника interv_kh в формате .xml
+2018-07-12 09:30:59,942 [ERROR] from application in application-akka.actor.default-dispatcher-8 - 
+
+! @78h6efcoe - Internal server error, for (GET) [/xml/interv_kh?pos=0&login=%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80&admin=true] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:251)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:178)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:363)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:361)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:91)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:91)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:43)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.NullPointerException: null
+	at controllers.XmlController.xmlFunction(XmlController.java:94)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$26(Routes.scala:485)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:134)
+	at play.core.routing.HandlerInvokerFactory$$anon$3.resultCall(HandlerInvoker.scala:133)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$8$$anon$2$$anon$1.invocation(HandlerInvoker.scala:108)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:88)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:31)
+	at play.mvc.Security$AuthenticatedAction.call(Security.java:69)
+	at play.core.j.JavaAction.$anonfun$apply$8(JavaAction.scala:138)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:653)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.streams.Execution$trampoline$.executeScheduled(Execution.scala:109)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:71)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68)
+	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallback(Promise.scala:312)
+	at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:303)
+	at scala.concurrent.impl.Promise.transformWith(Promise.scala:36)
+	at scala.concurrent.impl.Promise.transformWith$(Promise.scala:34)
+	at scala.concurrent.impl.Promise$DefaultPromise.transformWith(Promise.scala:183)
+	at scala.concurrent.Future.flatMap(Future.scala:301)
+	at scala.concurrent.Future.flatMap$(Future.scala:301)
+	at scala.concurrent.impl.Promise$DefaultPromise.flatMap(Promise.scala:183)
+	at play.api.libs.streams.Accumulator$.$anonfun$futureToSink$1(Accumulator.scala:244)
+	at akka.stream.impl.Transform.apply(TraversalBuilder.scala:155)
+	at akka.stream.impl.PhasedFusingActorMaterializer.materialize(PhasedFusingActorMaterializer.scala:476)
+	at akka.stream.impl.PhasedFusingActorMaterializer.materialize(PhasedFusingActorMaterializer.scala:417)
+	at akka.stream.impl.PhasedFusingActorMaterializer.materialize(PhasedFusingActorMaterializer.scala:408)
+	at akka.stream.scaladsl.RunnableGraph.run(Flow.scala:556)
+	at play.api.libs.streams.SinkAccumulator.run(Accumulator.scala:135)
+	at play.api.libs.streams.SinkAccumulator.run(Accumulator.scala:139)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:357)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	... 12 common frames omitted
+2018-07-12 09:38:02,633 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2018-07-12 09:38:02,950 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-68 - Creating Pool for datasource 'workdb'
+2018-07-12 09:38:02,986 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-68 - Database [workdb] connected at jdbc:postgresql://172.16.50.4:5432/dictionary
+2018-07-12 09:38:03,162 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-68 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-07-12 09:38:03,376 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-68 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+    filters.ExampleFilter
+
+2018-07-12 09:38:03,377 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-68 - Application started (Dev)
+2018-07-12 09:38:03,421 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-6 - Пользователь: don получает значения reestr
+2018-07-12 09:38:03,421 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-6 - Формирование и отправка структуры справочника reestr в формате .xml
+2018-07-12 09:38:03,446 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-6 - Формирование и отправка содержимого справочника reestr в формате .xml
+2018-07-12 09:38:20,032 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-8 - Пользователь: don получает значения interv
+2018-07-12 09:38:20,033 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-8 - Формирование и отправка структуры справочника interv в формате .xml
+2018-07-12 09:38:20,047 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-8 - Формирование и отправка содержимого справочника interv в формате .xml
+2018-07-12 09:38:28,198 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-4 - Пользователь: don получает значения f002
+2018-07-12 09:38:28,198 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-4 - Формирование и отправка структуры справочника f002 в формате .xml
+2018-07-12 09:38:28,218 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-4 - Формирование и отправка содержимого справочника f002 в формате .xml
+2018-07-12 09:38:52,856 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-7 - Пользователь: don получает значения interv
+2018-07-12 09:38:52,856 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-7 - Формирование и отправка структуры справочника interv в формате .xml
+2018-07-12 09:38:52,873 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-7 - Формирование и отправка содержимого справочника interv в формате .xml
+2018-07-12 09:39:01,401 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-16 - Пользователь: don получает значения f002
+2018-07-12 09:39:01,401 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-16 - Формирование и отправка структуры справочника f002 в формате .xml
+2018-07-12 09:39:01,418 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-16 - Формирование и отправка содержимого справочника f002 в формате .xml
+2018-07-12 09:39:15,794 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-15 - Пользователь: don получает значения interv
+2018-07-12 09:39:15,795 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-15 - Формирование и отправка структуры справочника interv в формате .xml
+2018-07-12 09:39:15,810 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-15 - Формирование и отправка содержимого справочника interv в формате .xml
+2018-07-12 09:39:22,073 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-20 - Пользователь: don получает значения interv
+2018-07-12 09:39:22,073 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-20 - Формирование и отправка структуры справочника interv в формате .xml
+2018-07-12 09:39:22,091 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-20 - Формирование и отправка содержимого справочника interv в формате .xml
+2018-07-12 09:40:25,477 [INFO] from application in application-akka.actor.default-dispatcher-19 - Shutting down connection pool.
+2018-07-12 09:40:26,684 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-79 - Creating Pool for datasource 'workdb'
+2018-07-12 09:40:26,761 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-79 - Database [workdb] connected at jdbc:postgresql://172.16.50.4:5432/dictionary
+2018-07-12 09:40:27,229 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-79 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-07-12 09:40:27,821 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-79 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+    filters.ExampleFilter
+
+2018-07-12 09:40:27,822 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-79 - Application started (Dev)
+2018-07-12 09:40:27,869 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-2 - Пользователь: don получает значения reestr
+2018-07-12 09:40:27,869 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-2 - Формирование и отправка структуры справочника reestr в формате .xml
+2018-07-12 09:40:27,899 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-2 - Формирование и отправка содержимого справочника reestr в формате .xml
+2018-07-12 09:46:00,298 [INFO] from application in application-akka.actor.default-dispatcher-13 - Shutting down connection pool.
+2018-07-12 09:46:00,819 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-75 - Creating Pool for datasource 'workdb'
+2018-07-12 09:46:00,846 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-75 - Database [workdb] connected at jdbc:postgresql://172.16.50.4:5432/dictionary
+2018-07-12 09:46:01,083 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-75 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-07-12 09:46:01,285 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-75 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+    filters.ExampleFilter
+
+2018-07-12 09:46:01,285 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-75 - Application started (Dev)
+2018-07-12 09:46:01,317 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-4 - Пользователь: don получает значения reestr
+2018-07-12 09:46:01,317 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-4 - Формирование и отправка структуры справочника reestr в формате .xml
+2018-07-12 09:46:01,335 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-4 - Формирование и отправка содержимого справочника reestr в формате .xml
+2018-07-12 09:46:04,722 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-8 - Пользователь: don получает значения doctors
+2018-07-12 09:46:04,722 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-8 - Формирование и отправка структуры справочника doctors в формате .xml
+2018-07-12 09:46:04,737 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-8 - Формирование и отправка содержимого справочника doctors в формате .xml
+2018-07-12 09:48:20,770 [INFO] from controllers.XmlController in application-akka.actor.default-dispatcher-7 - Пользователь: don получает информацию о структруе таблицы doctors
+2018-07-12 09:48:20,770 [INFO] from models.XMLMY in application-akka.actor.default-dispatcher-7 - Формирование структуры таблицы doctors из xml 
+2018-07-12 09:48:20,770 [INFO] from models.DictionaryDao in application-akka.actor.default-dispatcher-7 - Формирование и отправка структуры справочника doctors в формате .xml
+2018-07-12 09:48:24,841 [INFO] from controllers.MainPageController in application-akka.actor.default-dispatcher-16 - Пользователь don переходит на главную страницу

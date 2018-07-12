@@ -1,0 +1,55 @@
+@(nameColomn:Seq[String] ,users :Seq[Entities.User])
+<html>
+    <title>Список пользователей</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/fontXml.css")">
+    </head>
+    <body>
+        <div align="right">
+            <a href="@routes.LoginController.logout()">Выйти</a>
+        </div>
+
+        <a href="@routes.UsersController.renderAdminForm()">Добавить нового пользователя </a>
+        <br>
+        <a href="@routes.MainPageController.renderMainPage()">На главную </a>
+
+        <h1>Список пользователей</h1>
+
+
+        @sizeNameColomn()=@{
+            val sizeItems = nameColomn.length
+            sizeItems
+        }
+
+        @colomn(i:Int)=@{
+            val it = nameColomn
+            it(i)
+        }
+
+
+        <ul>
+            <table>
+                <tr>
+                @for(j <- 1 to sizeNameColomn) {
+                    <th>@colomn(j-1)</th>
+                }
+                </tr>
+                @users.map { item =>
+                    <th>@item.getId</th>
+                    <th>@item.getLogin</th>
+                    <th>@item.getPassword</th>
+                    <th>@item.getRegion</th>
+                    <th>@item.getAdmin</th>
+
+                    <th><a href="@routes.UsersController.deleteUser(item.getId)" > Удалить </a></th>
+                    <th><a href="@routes.UsersController.renderUpdateUserInfo(item.getId)">Обновить</a> </th>
+
+                    <tr></tr>
+                }
+
+            </table>
+        </ul>
+
+    </body>
+</html>

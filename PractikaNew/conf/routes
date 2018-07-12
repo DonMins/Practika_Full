@@ -1,0 +1,47 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+
+#
+# An example controller showing how to write asynchronous code
+
+#Login page controllers
+GET     /                           controllers.LoginController.renderLoginForm
++ nocsrf
+POST    /                              controllers.LoginController.checkingLoginForm
+GET     /logout                      controllers.LoginController.logout
+
+#main page controller
+GET     /main                       controllers.MainPageController.renderMainPage
+
+#controller for list of user
+GET     /users                      controllers.UsersController.usersList
+GET    /users/:id                     controllers.UsersController.deleteUser(id: Integer)
+GET     /adduser                    controllers.UsersController.renderAddUserForm
+GET     /addadmin                    controllers.UsersController.renderAdminForm()
++ nocsrf
+POST    /adduser                      controllers.UsersController.addingUser
++ nocsrf
+POST    /adduseradmin                      controllers.UsersController.addingUserAdmin
+GET     /updateuser:id                 controllers.UsersController.renderUpdateUserInfo(id: Integer)
++ nocsrf
+POST    /updateuser:id                  controllers.UsersController.updateUserInfo(id: Integer)
+
+
+
+GET     /xml/:st                           controllers.XmlController.xmlFunction(st: String,pos:Integer,login:String,admin:Boolean)
+GET /xmlSave/:st                           controllers.XmlController.xmlSave(st: String)
+GET /xmlStructura/:st                      controllers.XmlController.xmlStructura(st: String)
+
+
+# Apache CXF controller
+GET     /service/*path              org.apache.cxf.transport.play.CxfController.handle(path)
+POST    /service/*path              org.apache.cxf.transport.play.CxfController.handle(path)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+      

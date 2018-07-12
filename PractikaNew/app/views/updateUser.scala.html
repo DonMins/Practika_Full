@@ -1,0 +1,52 @@
+@(form: Form[UpdateForm], user: Entities.User)
+<html>
+    <title>Обновление данных пользователя</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/style.css")">
+    </head>
+    <body>
+        <a href="@routes.MainPageController.renderMainPage()" class = "link">На главную страницу </a>
+        @admin() = @{
+            var cod = false;
+            if(user.getAdmin)
+                cod = true;
+            cod = false;
+        }
+        <h1 class="g1">Обновить данные пользователя: @user.getLogin </h1>
+
+        @if(form.hasGlobalErrors) {
+            <h3>@form.globalError.message</h3>
+        }
+
+        @helper.form(action = routes.UsersController.updateUserInfo(user.getId), 'id -> "slick-login") {
+            <table>
+
+                <tr>
+                    <td> Пароль:  </td> <td>@helper.inputText(form("password"), '_showConstraints -> false)</td>
+                </tr>
+                <tr>
+                    <td> Регион:  </td> <td>@helper.inputText(form("region"), '_showConstraints -> false)</td>
+                </tr>
+
+                <tr>
+                    <td> Права администратора:  </td>
+                    <td>
+                        @if(user.getAdmin) {
+
+                            <input type="checkbox"
+                            name="@form("isAdmin").name" value= true checked >
+
+                            }
+                        @if(!(user.getAdmin)) {
+                           @helper.checkbox(form("isAdmin"), '_showConstaints -> false)
+                        }
+
+                    </td>
+                </tr>
+            </table>
+
+            <input type ="submit" value="Обновить">
+            }
+    </body>
+</html>

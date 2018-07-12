@@ -1,0 +1,168 @@
+@(items:Seq[String],items2:Seq[String],code:Seq[String],
+        position: Int, tablename: String, login:String, admin: Boolean )
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/fontXml.css")">
+    </head>
+    <body>
+            @*вывод колонки*@
+        @colomn(i:Int)=@{
+        val it = items
+        it(i)
+    }
+            @*вывод строки*@
+        @display(i:Int)=@{
+            val it = items2
+            it(i)
+        }
+            @*всего колонок*@
+        @sizeItems()=@{
+            val sizeItems = items.length
+            sizeItems
+        }
+            @*количество страниц*@
+        @pages=@{
+
+                sizeItems2()/(sizeItems())
+
+        }
+            @*всего записываемых элементов*@
+        @sizeItems2()=@{
+            val sizeItems2 = items2.length
+            sizeItems2
+
+        }
+
+            @*печатает название таблиц*@
+        @printCode(i:Int)=@{
+            val cod = code
+            cod(i)
+        }
+
+        <table>
+
+            <tr>
+                @*вывод в таблицу столбцов*@
+            @for(j <- 1 to sizeItems) {
+                <th>@colomn(j-1)</th>
+            }
+
+            </tr>
+            @*вывод в таблицу - если делится, переходим на следующую
+            строчку - нужно сюда впихнуть счётчик для загрузки *@
+            @if(position+50*sizeItems > sizeItems2){
+                @for(i <- position+1 to sizeItems2) {
+                    <td>@display(i-1)</td>
+
+                    @if(i%(sizeItems())==0){
+
+                        @if(!(code==(null))) {
+                            <td><a href="@routes.XmlController.xmlFunction(printCode(i / (sizeItems()) - 1),0,login,admin)">
+                                Посмотреть</a> <p></p>
+                                <a href="@routes.XmlController.xmlSave(printCode(i / (sizeItems()) - 1))"
+                                download ="@(printCode(i / (sizeItems()) - 1)).xml">
+                                    Cкачать</a>
+                                <p></p>
+                                <a href="@routes.XmlController.xmlStructura(printCode(i / (sizeItems()) - 1))">
+                                    Cтруктура</a>  </td>
+                            <tr></tr>
+                        }
+                        @if(code==null){
+                            <tr></tr>
+                        }
+                    }
+                }
+            }
+            @if(position+50*sizeItems()< sizeItems2()){
+                @for(i <- position+1 to position+50*sizeItems()) {
+                    <td>@display(i-1)</td>
+
+
+                    @if((i%(sizeItems())==0) && ( i<= position+50*sizeItems())){
+
+                        @if(!(code==(null))) {
+                            <td><a href="@routes.XmlController.xmlFunction(printCode(i / (sizeItems()) - 1),0,login,admin)">
+                                Посмотреть</a> <p></p>
+                                <a href="@routes.XmlController.xmlSave(printCode(i / (sizeItems()) - 1))"
+                                download ="@(printCode(i / (sizeItems()) - 1)).xml">
+                                    Cкачать</a>
+                                <p></p>
+                                <a href="@routes.XmlController.xmlStructura(printCode(i / (sizeItems()) - 1))">
+                                    Cтруктура</a>  </td>
+                            <tr></tr>
+                        }
+                        @if(code==null){
+                            <tr></tr>
+                        }
+                    }
+                }
+            }
+
+
+        </table>
+
+
+<div class="buttons">
+    <table>
+            @if(position+50*sizeItems()< sizeItems2() ) {
+
+                <tr>
+                    <a href="@routes.XmlController.xmlFunction(tablename, position + 50 * sizeItems(),login,admin)">
+                        Вперед</a>
+                </tr>
+            }
+            @if(position-sizeItems()>=0){
+
+               @if(position - 50 * sizeItems()<0) {
+                   <tr>
+                       <a href="@routes.XmlController.xmlFunction(tablename,0,login,admin)">
+                           Назад</a>
+                   </tr>
+               }
+
+                @if((position - 50 * sizeItems())>=0) {
+                    <tr>
+                        <a href="@routes.XmlController.xmlFunction(tablename, position - 50 * sizeItems(),login,admin)">
+                            Назад</a>
+                    </tr>
+                }
+
+            }
+
+            @if(position != 0){
+
+                <tr>
+                    <a href="@routes.XmlController.xmlFunction(tablename, 0,login,admin)">
+                        В начало  </a>
+
+
+                </tr>
+            }
+
+        @if((position+50*sizeItems()<sizeItems2())) {
+
+
+            <tr>
+                <a href="@routes.XmlController.xmlFunction(tablename, sizeItems2() - 49 * sizeItems(),login,admin)">
+                    В конец  </a>
+            </tr>
+        }
+        @if(tablename != "reestr") {
+            <tr>
+
+                <a href="@routes.XmlController.xmlFunction("reestr", 0,login,admin)">
+                    Вернуться в реестр справочников  </a>
+            </tr>
+        }
+    </table>
+</div>
+
+
+    </body>
+
+</html>
+
+
+

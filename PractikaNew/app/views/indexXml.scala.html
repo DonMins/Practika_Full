@@ -1,0 +1,34 @@
+@(message: String)(list:Seq[String],list2:Seq[String],code:Seq[String],
+        position: Int, tablename: String, login : String,admin:Boolean)
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/fontXml.css")">
+    </head>
+    <body>
+        <div align="right">
+            Вы вошли как : @login
+                <br>
+            <a href="@routes.LoginController.logout()">Выйти</a>
+        </div>
+        @if(admin) {
+            <a href="@routes.MainPageController.renderMainPage()" >На главную страницу </a>
+        }
+
+
+
+
+
+
+        @main("Реестр справочников"){
+        <h1>@message</h1>
+
+        @listviesXml(list,list2,code,position,tablename,login,admin)
+    }
+
+    </body>
+</html>
+
+
+

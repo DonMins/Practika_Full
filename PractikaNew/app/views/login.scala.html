@@ -1,0 +1,26 @@
+@(bookFrom :Form[LoginForm])
+<html>
+    <head>
+        <title>
+          Страница авторизации
+        </title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/style.css")">
+    </head>
+    <body>
+        @if(bookFrom.hasGlobalErrors){
+            <h3>@bookFrom.globalError.message</h3>
+        }
+        @helper.form(action = routes.LoginController.checkingLoginForm(), 'id -> "slick-login"){
+            <h1>Вход в личный кабинет </h1>
+            <br>
+            @helper.inputText(bookFrom("login"),'_showConstraints ->false, 'placeholder -> "Логин")
+            @helper.inputPassword(bookFrom("password"),'_showConstraints ->false, 'placeholder -> "Пароль")
+
+            <input type ="submit" value="Войти">
+
+            <a href="@routes.UsersController.renderAddUserForm()" class="slick-login2">Регистрация</a>
+
+        }
+
+    </body>
+</html>

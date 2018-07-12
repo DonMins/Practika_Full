@@ -1,0 +1,22 @@
+@()
+<html>
+    <head>
+    <title>functionality</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/style.css")">
+    </head>
+
+    <body>
+        <div align="right">
+
+                <a class="rigt" href="@routes.LoginController.logout()">Выйти</a>
+        </div>
+
+
+        <h1 class="g1">Страница администратора</h1>
+
+        <ul>
+            <li><a class="g1" href="@routes.UsersController.usersList()">Cписок пользователей</a></li>
+            <li><a class="g1" href="@routes.XmlController.xmlFunction("reestr",0,"Администратор",true)">Справочники</a></li>
+        </ul>
+    </body>
+</html>
